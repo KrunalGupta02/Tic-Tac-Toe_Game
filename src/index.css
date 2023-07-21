@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.board_row {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-weight: bold;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.square:hover {
+  background-color: #f5f5f5;
+}
+
+.square:active {
+  background-color: #dcdcdc;
+}
+
+.board_row:last-child .square {
+  /* border: 2px solid red; */
+  margin-bottom: 0;
+}
+
+.status {
+  /* border: 2px solid red; */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
